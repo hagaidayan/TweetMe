@@ -5,7 +5,7 @@ TweetMeService.js - the service's file.
 config.js - a file consisted of the configuration of Twitter login credentials.
 
 FUNCTIONALITY -
-TweetMe is a web app that listens to REST calls on port 3000 and offers the following features - 
+TweetMe is a web app that listens to REST calls and offers the following features - 
 
 1. GET call on path "/searchTweets/*" (where '*' is any string)
 with authentication headers - 
@@ -15,7 +15,7 @@ and upon success return it in a JSON format in HTML status code 200.
 (a bad GET call will return a response regarding the unrecognized request)
 
 an example of a call that should work - 
-GET http://localhost:3000/searchTweets/nba
+GET https://tweetme1-demo.herokuapp.com/searchTweets/nba
 headers:
 consumer_key = a8OaXJYacaRrzrQPEmvwDArCY
 consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
@@ -33,7 +33,7 @@ the service will interact Twitter API in order to tweet the string '*'
 by the account related on the app configured by the credentials in the request.
 
 an example of a call that should work -
-POST http://localhost:3000/tweet
+POST https://tweetme1-demo.herokuapp.com/tweet
 headers:
 consumer_key = a8OaXJYacaRrzrQPEmvwDArCY
 consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
