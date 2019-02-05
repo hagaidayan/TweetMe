@@ -21,6 +21,9 @@ consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
 access_token_key = 1092376884824952832-UZMqKrvoGkhD69iJ5wd9GxAXdMwVsX
 access_token_secret = Iy4bpUww34sCKsmikMhbZq3ldVYIELfMPljz1Bc59gpgJ
 
+
+
+
 2. POST call on path "/tweet"
 with authentication headers - 
 consumer_key, consumer_secret, access_token_key, access_token_secret
@@ -35,6 +38,9 @@ consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
 access_token_key = 1092376884824952832-UZMqKrvoGkhD69iJ5wd9GxAXdMwVsX
 access_token_secret = Iy4bpUww34sCKsmikMhbZq3ldVYIELfMPljz1Bc59gpgJ
 message = ahoy
+
+
+
 
 TESTS - 
 implemented by the end of the file using Chai testing framework
