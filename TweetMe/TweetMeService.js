@@ -52,7 +52,6 @@ app.get('/searchTweets/:searchKey', function (req, res) {
 //handle an unrecognized request
 app.get('*', function (req, res) {
     console.log('unrecognized request');
-    //res.writeHead(200, {'Content-Type': 'text/event-stream', 'path': 'unrecognized'});
     res.json({"response":"unrecognized request"});
     res.end();
 });
@@ -141,7 +140,6 @@ testSearchFailure = function(){
         .then(function (res) {
             expect(res).to.have.status(200);
             expect(res).to.be.json;
-            //console.log(JSON.stringify(res.body));
             expect(JSON.stringify(res.body)).to.equal('{"errors":[{"code":32,"message":"Could not authenticate you."}]}');
             console.log(testSuccessMsg + currentTest);
         }).catch(function (err) { // test failed
@@ -163,7 +161,6 @@ testTweet = function(){
         .then(function (res) {
             expect(res).to.have.status(200);
             expect(res).to.be.json;
-            //console.log(JSON.stringify(res.body));
             expect(JSON.stringify(res.body)).to.equal('{"response":"attempt tweet - hello"}');
             console.log(testSuccessMsg + currentTest);
         }).catch(function (err) { // test failed
