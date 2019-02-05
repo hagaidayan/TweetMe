@@ -16,6 +16,7 @@ and upon success return it in a JSON format in HTML status code 200.
 
 an example of a call that should work - 
 GET http://localhost:3000/searchTweets/nba
+headers:
 consumer_key = a8OaXJYacaRrzrQPEmvwDArCY
 consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
 access_token_key = 1092376884824952832-UZMqKrvoGkhD69iJ5wd9GxAXdMwVsX
@@ -33,6 +34,7 @@ by the account related on the app configured by the credentials in the request.
 
 an example of a call that should work -
 POST http://localhost:3000/tweet
+headers:
 consumer_key = a8OaXJYacaRrzrQPEmvwDArCY
 consumer_secret = SBGleBGPIhG6mIW8BHZCz5SgXRjfy9kNjrn4ltwEA7mqY2lpYh
 access_token_key = 1092376884824952832-UZMqKrvoGkhD69iJ5wd9GxAXdMwVsX
